@@ -7,7 +7,7 @@ const myVideo = document.createElement('video')
 var peer = new Peer(undefined,{
     path:'/peerjs',
     host : '/',
-    port : 443
+    port : '443'
 
 })
 
@@ -31,6 +31,7 @@ navigator.mediaDevices.getUserMedia({
         })
     })
 
+    
 
     socket.on('user-connected',(userId)=>{
         connectToNewUser(userId,stream)
