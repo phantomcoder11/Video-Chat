@@ -37,5 +37,5 @@ socket.on('join-room',(roomId,userId)=>{
 
 
 server.listen(port,()=>{
-    console.log('Server is up running on port 3030')
+    console.log('Server is up running on port'+ port)
 })
